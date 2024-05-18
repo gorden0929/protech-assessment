@@ -1,0 +1,63 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dialogContent {
+  position: relative;
+  background-color: var(--color-red);
+  padding: 20px;
+  border-radius: 4px;
+  width: 256px;
+  text-align: center;
+}
+
+.dialogDismissBtn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -32px;
+  background-color: transparent;
+  border: 0;
+  color: #FAFAFA;
+  cursor: pointer;
+}
+
+.diamondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0 24px 0;
+}
+
+.diamond {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  background-color: var(--color-gold);
+  /* Background color of the diamond */
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamondText {
+  position: absolute;
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  transform: rotate(-45deg);
+}
